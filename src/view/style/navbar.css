@@ -1,0 +1,169 @@
+*{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 62.5%;
+}
+   
+.link{
+  color: black;
+  text-decoration: none;
+}
+.header{
+  height: 25rem;
+  width: 100%;
+  display: flex;
+}
+.cn{
+  height: 25rem;
+  width: 100%;
+}
+.maincol1{
+  height: 15rem;
+  display: flex;
+  justify-content: space-between ;
+  align-items: center;
+}
+.maincol2{
+  height: 10rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between ;
+  align-items: center;
+}
+.maincol2center{
+  height: 100%;
+  width: 90rem;
+  margin-left: 50rem;
+  align-items: center;
+}
+.rw{
+ 
+}
+li{
+  margin-top: 3rem;
+}
+.ul1{
+    display: flex;
+    list-style: none;
+    gap: 9rem;
+    margin-left: 10rem;
+    
+}
+.search{
+  height: 100%;
+  width: 25rem;
+  margin-right: 4.0rem;
+}
+.linkbottom{
+    font-size: 22px;
+    text-decoration: none;
+    color: black;
+    font-family: Poppins,sans-serif;
+  }
+.col1{
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+  margin-left: 4rem;
+}
+.col2{
+  width: 20rem;
+  margin-left: -30rem;
+  align-items: center;
+}
+.col3{
+  display: flex;
+  width: 20rem;
+  gap: 4rem;
+  align-items: center;
+  margin-right: 26rem;
+}
+.imgnav1{
+     width: 5rem;
+     height: 5rem;
+     margin-left: -1.5rem;
+}
+.imgnav2{
+      height: 12rem;
+      margin-left: -9.5rem;
+      width: 70rem;
+}
+.imgnav3{
+  width: 22rem;
+  height: 9rem;
+}
+.hr1{
+    height: 0.1rem;
+    background-color: saddlebrown;
+    width: 100%;
+}  
+#ui1{
+  height: 3.5rem;
+  width: 3.5rem;
+  color: black;
+  text-decoration: none;
+} 
+#ui2{
+  height: 3.5rem;
+  width: 3.5rem;
+} 
+#ui3{
+  height: 3.5rem;
+  width: 3.5rem;
+  color:black;
+}
+.sp1{
+  font-size: 2.4rem;
+  margin-left: -4.4rem;
+  color: black;
+  text-decoration: none;
+} 
+.sp2{
+  font-size:2.4rem;
+} 
+  
+
+
+@media screen and (max-width:1360px){
+
+  .maincol1{
+    flex-direction :column;
+ 
+    width: fit-content;
+  }
+  .headerf{
+    flex-direction: column;
+    width:80%;
+    
+  }
+  .maincol2{
+    flex-direction: column;
+    width: 50%;
+    margin-top: 200px;
+  }
+  .ul1{
+    flex-direction: column;
+  }
+}
+
+
+@media screen and (max-width:768px){
+
+  .maincol1{
+    flex-direction :column;
+     width: 80%;
+   
+  }
+  .headerf{
+    flex-direction: column;
+    width:80%;
+    
+  }
+  .maincol2{
+    flex-direction: column;
+    width: 50%;
+    margin-top: 200px;
+  }
+  .ul1{
+    flex-direction: column;
+  }
+}

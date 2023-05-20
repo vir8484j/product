@@ -2,6 +2,6 @@ import React from 'react'
 
 export default function Sale() {
   return (
-    <div className='bg-primary'>S</div>
+    <div className='bg-primary'>sale</div>
   )
 }

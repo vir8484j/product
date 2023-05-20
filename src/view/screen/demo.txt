@@ -1,0 +1,211 @@
+<div className='lux'> 
+<div className="top">
+{topmost.map(function(q){
+            return(
+                <div><p><marquee behavior="slider" direction="right">{q.sale}</marquee></p></div>
+                
+            )
+        }
+        )
+        }
+</div>
+
+         <div className="lux1">
+          
+        {emailphoto.map(function(q){
+            return(
+                <div><img src={q.image} className="luximg"/></div>
+                
+            )
+        }
+        )
+        }
+        {emaillink.map(function(q){
+            return(
+                <div style={{marginTop:'43px',fontSize:'20px'}}><p><b>{q.text1}</b></p></div>
+                
+            )
+        }
+        )
+        }
+        {orem.map(function(q){
+            return(
+                <div style={{marginTop:'43px',marginLeft:'-10px',fontSize:'20px'}}><p><b>{q.text2}</b></p></div>
+                
+            )
+        }
+        )
+        }
+        {emailnum.map(function(q){
+            return(
+                <div style={{marginTop:'43px',marginLeft:'-10px',fontSize:'20px'}}><p><b>{q.text3}</b> </p></div>
+                
+            )
+        }
+        )
+        }
+        7
+        <div className='navlogo'>
+        {title.map(function(q){
+            return(
+                
+                <div className="logo"><p><b>{q.logo}</b> </p></div>
+                
+            )
+        }
+        )
+        }
+        </div>
+        <div className='navright'>
+        {shop.map(function(q){
+            return(
+                <div><img src={q.image} className="luximg2"/></div>
+                
+            )
+        }
+        )
+        }
+        </div>
+<div className="hrdiv"></div>
+
+        {sign.map(function(q){
+            return(
+                <div style={{marginTop:'53px',marginLeft:'10px'}}><Link style={{textDecoration:'none'}}><h4 style={{color:'black',marginLeft:'5px'}}>{q.in}</h4></Link></div>
+                
+            )
+        }
+        )
+        }
+     </div>
+     <div style={{backgroundColor:'grey',height:'0.1%',width:'90.5%',marginBottom:'30px',marginLeft:'78px'}}></div>
+     <div className="lux2">
+         <a href="../src/view/screen/home.js" className="lux2a" style={{marginLeft:'40px'}}>Rolex</a>
+         <a href="" className="lux2a">In-Stock Deals</a>
+         <a href="" className="lux2a">Summer Sale</a>
+         <a href="" className="lux2a">Men's Watches</a>
+         <a href="" className="lux2a">Women's Watches</a>
+     </div>
+     
+     <div className="lux3">
+        <input type='button' value="FREE OVERNIGHT SHIPPING" className="btn" style={{fontSize:'20px'}}/>
+         <input type='button' value="30 DAY RETURN POLICY" className="btn" style={{fontSize:'20px'}}/>
+         <input type='button' value="NO RESTOCKING FEE" className="btn" style={{fontSize:'20px'}}/> 
+         {/* <button className="btn" style={{fontSize:'20px'}}>FREE OVERNIGHT SHIPPING</button>
+         <button className="btn" style={{fontSize:'20px'}}>30 DAY RETURN POLICY</button>
+         <button className="btn" style={{fontSize:'20px'}}>NO RESTOCKING FEE</button> */}
+     </div>
+    
+</div>
+
+
+
+
+
+import React from 'react'
+import { Row,Col,Container } from 'react-bootstrap'; 
+import '../style/footer.css'
+const Footer = () => {
+  return (
+  <>
+  <div className='lastmain'>
+     <div class="lasth1"><img src="../img/rolexlogoheaderr.png" alt="" /></div>
+    <div class="last">
+        <div class="last1">
+            <div class="last1h2f"><h2>CONTACT US</h2></div>
+            <div class="last1first">
+                <p><img src="location.png" alt='' style={{width:'30px',height: '30px',backgroundColor: 'white',borderRadius: '40px'}}/>
+                    <h2 style={{marginLeft: '10px',marginTop: '14px'}} alt=''>Location</h2>
+                </p>
+            </div>
+            <div class="last1second">
+                <p><img src="telephone.png" alt='' style={{width:'30px',height:'30px',backgroundColor: 'white',borderRadius: '40px'}}/>
+                    <h2 style={{marginLeft: '10px',marginTop: '14px'}}>Call +01 1234567890</h2>
+            </p>
+        </div>
+        <div class="last1third">
+            <p><img src="email.png" alt='' style={{width:'30px',height: '30px',backgroundColor: 'white',borderRadius: '40px'}}/>
+                <h2 style={{marginLeft: '10px',marginTop: '14px'}}>demo@gmail.com</h2>
+        </p>
+        </div>
+        <div class="last1p"><p>Readable content of<br/>
+        a page when looking <br/>
+        at its layoutreadable <br/>
+        content of a page <br/>
+        when looking at its <br/>
+        layout</p></div>
+        </div>
+        <div class="last2">
+        <div class="last2h2"><h2>USEFUL LINK</h2></div>
+        <div class="last2p"><p>Readable content of<br/>
+            a page when looking <br/>
+            at its layoutreadable <br/>
+            content of a page <br/>
+            when looking at its <br/>
+            layout</p></div>
+        </div>  
+        <div class="last3">
+            <div class="last3h2"><h2>OFFICES</h2></div>
+            <div class="last3p"><p>Readable content of<br/>
+                a page when looking <br/>
+                at its layoutreadable <br/>
+                content of a page <br/>
+                when looking at its <br/>
+                layout</p></div>
+            </div>  
+        
+            <div class="last4">
+                <div class="last4h2"><h2>NEWS LETTER</h2></div>
+                <div><form>
+                     <input type="text" placeholder="    Enter your email" id="form3id1"/>
+                     </form>
+                </div>
+                <div class="form2btn"><button>SUBSCRIBE</button></div>
+            </div>
+    </div>    
+    
+
+    <div class="footer">
+        <div class="footerhr"></div>
+        <div class="footerp"><p><center>© 2020 All Rights Reserved. Design by Free Html Template</center></p></div>
+    </div>
+
+</div>
+  </>
+  )
+}
+
+export default Footer
+
+
+function App(){
+
+    return(
+
+    <BrowserRouter>
+     <>
+     <div>
+
+     <Header/>
+     </div>
+
+        <Routes>
+            <Route path="/" element={<Home/>} />
+            <Route path="/details" element={<Details/>} />
+            <Route path="/Signin" element={<Signin/>} />            
+            <Route path="/header" element={<Header/>} />            
+            <Route path="/login" element={<Login/>} />            
+            <Route path="/Menswatches" element={<Menswatches/>} />            
+            <Route path="/Womenswatches" element={<Womenswatches/>} />            
+            <Route path="/Watches1908" element={<Watches1908/>} />            
+
+        </Routes>
+        <div>
+         <Footer/>
+        
+        </div>
+        </>
+    </BrowserRouter>
+    
+    )
+}
+export default App

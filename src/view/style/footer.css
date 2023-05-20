@@ -1,0 +1,147 @@
+.lastmain{
+    background-color: bisque;
+  }
+  .last{
+    width:84%;
+    height: 400px;
+    margin-top: 0px;
+    margin-left: 140px;
+    display: flex;
+    margin-bottom: 50px;
+  }
+  .lasth1{
+    
+  }
+  .last1{
+    width: 350px;
+    height: 300px;
+    margin-top: -50px;
+    
+  }
+  .last1h2f{
+    color: white;
+    margin-left: 52px;
+    font-size: 16px;
+    margin-top: 60px;
+  
+  }
+  .last1f img{
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 40px;
+  }
+  .last1first{
+    display:flex;
+    color: white;
+    margin-left: 50px;
+    font-size: 12px;
+    margin-top: -10px;
+  }
+  .last1first p h2:hover{
+    transition: 2s;
+    color: #FFD93D;
+    cursor: pointer;
+  }
+  .last1second{
+    display:flex;
+    color: white;
+    margin-left: 50px;
+    margin-top: -20px;
+    font-size: 12px;
+  }
+  .last1third{
+    display:flex;
+    color: white;
+    margin-left: 50px;
+    margin-top: -20px;
+    font-size: 12px;
+  }
+  .last1p{
+    color: white;
+    margin-left: 56px;
+    margin-top: -20px;
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: -15px;
+  }
+  .last2{
+    color:white;
+    width:250px;
+    height: 250px;
+    margin-left: 50px;
+  
+  }
+  .last2h2{
+    margin-top: -10px;
+  }
+  .last2p{
+    line-height: 28px;
+  }
+  .last3{
+    color:white;
+    width:250px;
+    height: 250px;
+    margin-left: 50px;
+  
+  }
+  .last3h2{
+    margin-top: -10px;
+  }
+  .last3p{
+    line-height: 28px;
+  }
+  .last4{
+    color:white;
+    width:250px;
+    height: 250px;
+    margin-left: 50px;
+  
+  }
+  .last4h2{
+    margin-top: -10px;
+  }
+  
+  #form3id1{
+    background: transparent;
+    border: 2px solid;
+    border-color: white;
+    color: white; 
+    width:250px;
+    height:50px;
+    font-size: 18px;
+  }
+  .form2btn button{
+    background: transparent;
+    border: 2px solid;
+    border-color: white;
+    color: grey; 
+    width:180px;
+    height:50px;
+    font-size: 18px;
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+  }
+  .form2btn button:hover{ 
+    background-color: #FFD93D;
+    transition: 2s;
+    border-color: #FFD93D;
+    border: transparent;
+    cursor: pointer;}
+  .footer{
+    height: 70px;
+    width: 70%;
+    margin-left: 250px;
+  }
+  .footerhr{
+    height: 1px;
+    width:100%;
+    background-color: grey;
+  }
+  .footerp{
+    color: white;
+    font-family: 'open-sans',sans-serif;
+    margin-top: 22px;
+    font-size: 18px;
+  }
+  

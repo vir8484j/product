@@ -40,9 +40,17 @@ transition: 10ms;
 .logo{
     font-size: 30px;
     font-family: 'Times New Roman', Times, serif;
-    margin-left: 380px;
+    margin-left: 300px;
     margin-top: 20px;
     font-size: 50px;
+}
+.rolexlogoo{
+    margin-left:20px;
+    margin-top: 35px; 
+       
+}
+.signdiv{
+    
 }
 .top{
     height: 50px;
@@ -75,7 +83,8 @@ transition: 10ms;
     width:25px;
     height:25px;
     margin-top: 55px;
-    margin-left: 400px;
+    margin-left: 230px;
+    
 }
 .lux1{
     display: flex;
@@ -100,10 +109,10 @@ p{
 display:flexbox;      
     padding: 20px;
 position: relative;   
-
+margin-top: 50px;
 }
 .aweslid{
-    height: 800px;
+    height: 700px;
     width: 1900px;
     
 }

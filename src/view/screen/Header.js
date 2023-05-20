@@ -1,6 +1,6 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { emailphoto, shop, title, topmost ,emaillink ,orem, emailnum,sign } from "../data/data";
+import { emailphoto, shop, title, topmost ,emaillink ,orem, emailnum,sign, rolexlogo, log } from "../data/data";
 import {Link} from 'react-router-dom'
 export default function Header  () {
   return (
@@ -53,7 +53,7 @@ export default function Header  () {
         {title.map(function(q){
             return(
                 
-                <div className="logo"><p><b>{q.logo}</b> </p></div>
+                <div className="logo"><img src={q.image} alt="" style={{width:'500px'}}/></div>
                 
             )
         }
@@ -72,20 +72,40 @@ export default function Header  () {
 
         {sign.map(function(q){
             return(
-                <div style={{marginTop:'53px',marginLeft:'10px'}}><Link style={{textDecoration:'none'}}><h4 style={{color:'black',marginLeft:'5px'}}>{q.in}</h4></Link></div>
+                <div style={{marginTop:'53px',marginLeft:'10px'}} className='signdiv'><Link style={{textDecoration:'none'}} to={"./Signin.js"}><h4 style={{color:'black',marginLeft:'5px'}}>{q.in}</h4></Link></div>
                 
             )
         }
         )
         }
+        <div className="hrdiv"></div>
+
+        {log.map(function(q){
+            return(
+                <div style={{marginTop:'53px',marginLeft:'10px'}} className='signdiv'><Link style={{textDecoration:'none'}} to={"./login.js"}><h4 style={{color:'black',marginLeft:'5px'}}>{q.in}</h4></Link></div>
+                
+            )
+        }
+        )
+        }
+        {rolexlogo.map(function(q){
+            return(
+                
+                <div className="rolexlogoo"><img src={q.image} alt="" /></div>
+                
+            )
+        }
+        )
+        }
+
      </div>
      <div style={{backgroundColor:'grey',height:'0.1%',width:'90.5%',marginBottom:'30px',marginLeft:'78px'}}></div>
      <div className="lux2">
-         <a href="../src/view/screen/home.js" className="lux2a" style={{marginLeft:'40px'}}>Rolex</a>
-         <a href="" className="lux2a">In-Stock Deals</a>
-         <a href="" className="lux2a">Summer Sale</a>
-         <a href="" className="lux2a">Men's Watches</a>
-         <a href="" className="lux2a">Women's Watches</a>
+         <Link to={"../screen/home.js"} className="lux2a" style={{marginLeft:'40px'}}>Home</Link>
+         <Link to={"../screen/Watches1908.js"} className="lux2a" >Rolex 1908</Link>
+         <Link to={"../screen/Summersale.js"} className="lux2a">Summer Sale</Link>
+         <Link to={"../screen/Menswatches.js"} className="lux2a">Men's Watches</Link>
+         <Link to={"../screen/Womenswatches.js"} className="lux2a">Women's Watches</Link>
      </div>
      
      <div className="lux3">

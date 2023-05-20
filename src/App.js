@@ -1,44 +1,75 @@
 import Details from "./view/screen/Details";
 import Home from "./view/screen/home.js";
-import Sale from "./view/screen/sale.js";
+import Signin from "./view/screen/Signin";
+import Login from "./view/screen/login";
 import './view/style/style.css'
+import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {BrowserRouter,Routes,Route,Link} from 'react-router-dom'
-import { emailphoto, shop, sign, title, topmost } from "./view/data/data";
-import { emaillink } from "./view/data/data";
-import { orem } from "./view/data/data";
-import { emailnum } from "./view/data/data";
-import Nav from 'react-bootstrap/Nav'
-import Button from 'react-bootstrap/Button';
-import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
-import Popover from 'react-bootstrap/Popover';
+import {BrowserRouter,Routes} from 'react-router-dom'
 import Header from "./view/screen/Header"
+import Footer from "./view/screen/footer"
+import Menswatches from "./view/screen/Menswatches";
+import Womenswatches from "./view/screen/Womenswatches"
+import Watches1908 from "./view/screen/Watches1908"
+import Summersale from "./view/screen/Summersale";
 
-function App(){
 
-    return(
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous"></link>
 
-    <BrowserRouter>
-     <>
-     <div>
 
-     <Header/>
-     </div>
-
-        <Routes>
-            <Route path="/" element={<Home/>} />
-            <Route path="/details" element={<Details/>} />
-            <Route path="/Sale" element={<Sale/>} />            
-            <Route path="/header" element={<Header/>} />            
-
-        </Routes>
-        <div>
-        footer
-        
-        </div>
-        </>
-    </BrowserRouter>
-    
-    )
-}
-export default App
+const Layout = () => {
+    return (
+      <div className="app">
+        <Header />
+        <Outlet />
+        <Footer />
+      </div>
+    );
+  };
+  
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Layout />,
+      children: [
+        {
+          path: "/",
+          element: <Home />,
+        },
+        {
+          path: "/src/view/screen/Menswatches.js",
+          element: <Menswatches />,
+        },
+        {
+          path: "/src/view/screen/Womenswatches.js",
+          element: <Womenswatches />,
+        },
+        {
+            path: "/src/view/screen/Watches1908.js",
+            element: <Watches1908 />,
+        },
+        {
+            path: "/src/view/screen/Summersale.js",
+            element: <Summersale/>,
+        },
+        {
+            path: "/src/view/screen/login.js",
+            element: <Login />,
+        },
+        {
+            path: "/src/view/screen/Signin.js",
+            element: <Signin/>,
+        },
+      ],
+    },
+  ]);
+  
+  function App() {
+    return (
+      <div>
+        <RouterProvider router={router} />
+      </div>
+    );
+  }
+  
+  export default App;

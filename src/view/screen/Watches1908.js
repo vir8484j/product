@@ -1,10 +1,9 @@
-import {product,slid} from '../data/data'
+import {watchesold1908,slid} from '../data/data'
 import {useNavigate} from 'react-router-dom'
 import AwesomeSlider from 'react-awesome-slider';
 import 'react-awesome-slider/dist/styles.css';
-import {Link} from 'react-router-dom';
 import Breadcrumb from 'react-bootstrap/Breadcrumb';
-function Home(){
+function Watches1908(){
     let navigate = useNavigate()
 function addtocart(){
 alert('addtocart')
@@ -19,6 +18,7 @@ return(
 <div>
 <div><Breadcrumb>
       <Breadcrumb.Item href="#" style={{marginLeft:'78px'}}>Home</Breadcrumb.Item>
+      <Breadcrumb.Item href="#"> Watches 1908</Breadcrumb.Item>
     </Breadcrumb></div>
     {
         <AwesomeSlider className='aweslid'>
@@ -42,7 +42,7 @@ return(
 
         <div className='main-div-product'>
            {
-            product.map(function(d){
+            watchesold1908.map(function(d){
             return(
             <div className='product-div'>
                 <div className='image'>
@@ -79,4 +79,4 @@ return(
 )  
 }
 
-export default Home
+export default Watches1908
