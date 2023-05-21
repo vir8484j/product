@@ -1,6 +1,6 @@
 .btn{
     border-radius: -10px;
-    width: 530px;
+    
     
     
 }
@@ -11,7 +11,7 @@
     margin-top: 50px;
     background-color: #EEEEEE;
     width: 90.5%;
-    margin-left: 78px;
+    
 }
 
 .lux2{
@@ -20,10 +20,10 @@
 .lux2a{
     text-decoration: none;
     color: black;
-    font-size: 28px;
+    font-size: 18px;
     padding: 10px;
     width:50px;
-    margin-left: 205px;
+
 }
 .lux2a:hover {
 border-bottom: 4px solid blue;

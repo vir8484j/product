@@ -14,46 +14,24 @@ export default function Header  () {
         }
         )
         }
-</div>
+</div> 
 
-         <div className="lux1">
+      <div style={{display:'inline-flex',alignItems:'center'}}>
         {emailphoto.map(function(q){
             return(
-                <div><img src={q.image} className="luximg"/></div>
+                <div><img src={q.image} style={{width:30,marginLeft:50}}/></div>
                 
             )
         }
         )
         }
-        {emaillink.map(function(q){
-            return(
-                <div style={{marginTop:'43px',fontSize:'20px'}}><p><b>{q.text1}</b></p></div>
-                
-            )
-        }
-        )
-        }
-        {orem.map(function(q){
-            return(
-                <div style={{marginTop:'43px',marginLeft:'-10px',fontSize:'20px'}}><p><b>{q.text2}</b></p></div>
-                
-            )
-        }
-        )
-        }
-        {emailnum.map(function(q){
-            return(
-                <div style={{marginTop:'43px',marginLeft:'-10px',fontSize:'20px'}}><p><b>{q.text3}</b> </p></div>
-                
-            )
-        }
-        )
-        }
-
+        <div>
+       <h5 style={{marginLeft:30}}>EMAIL:info@gmail.com or 1.804.824.8888</h5>
+       </div>
         {title.map(function(q){
             return(
                 
-                <div className="logo"><img src={q.image} alt="" style={{width:'500px'}}/></div>
+                <div ><img src={q.image} alt="" style={{width:400}}/></div>
                 
             )
         }
@@ -62,27 +40,37 @@ export default function Header  () {
 
         {shop.map(function(q){
             return(
-                <div><img src={q.image} className="luximg2"/></div>
+                <div>
+                    <Link style={{textDecoration:'none'}} to={"screen/Addtocart.js"}>
+                    <img src={q.image} style={{width:30,marginLeft:30}}/>
+                    </Link>
+                    </div>
                 
             )
         }
         )
         }
-<div className="hrdiv"></div>
+
 
         {sign.map(function(q){
             return(
-                <div style={{marginTop:'53px',marginLeft:'10px'}} className='signdiv'><Link style={{textDecoration:'none'}} to={"./Signin.js"}><h4 style={{color:'black',marginLeft:'5px'}}>{q.in}</h4></Link></div>
+                <div style={{}} ><Link style={{textDecoration:'none'}} to={"screen/Signup.js"}>
+                    <h4 style={{color:'black',marginLeft:'20px'}}>{q.in}</h4>
+                    </Link>
+                    </div>
                 
             )
         }
         )
         }
-        <div className="hrdiv"></div>
+     
 
         {log.map(function(q){
             return(
-                <div style={{marginTop:'53px',marginLeft:'10px'}} className='signdiv'><Link style={{textDecoration:'none'}} to={"./login.js"}><h4 style={{color:'black',marginLeft:'5px'}}>{q.in}</h4></Link></div>
+                <div >
+                    <Link style={{textDecoration:'none'}} to={"screen/Signin.js"}>
+                        <h4 style={{color:'black',marginLeft:'20px'}}>{q.in}</h4>
+                    </Link></div>
                 
             )
         }
@@ -91,17 +79,17 @@ export default function Header  () {
         {rolexlogo.map(function(q){
             return(
                 
-                <div className="rolexlogoo"><img src={q.image} alt="" /></div>
+                <div><img src={q.image} alt=""  style={{width:100,marginLeft:20}}/></div>
                 
             )
         }
         )
         }
 
-     </div>
-     <div style={{backgroundColor:'grey',height:'0.1%',width:'90.5%',marginBottom:'30px',marginLeft:'78px'}}></div>
+     </div> 
+     <div style={{backgroundColor:'grey',height:'0.1%',width:'90.5%',marginBottom:'30px',marginLeft:'4%'}}></div>
      <div className="lux2">
-         <Link to={"../screen/home.js"} className="lux2a" style={{marginLeft:'40px'}}>Home</Link>
+         <Link to={"../screen/home.js"} className="lux2a" style={{marginLeft:'0px'}}>Home</Link>
          <Link to={"../screen/Watches1908.js"} className="lux2a" >Rolex 1908</Link>
          <Link to={"../screen/Summersale.js"} className="lux2a">Summer Sale</Link>
          <Link to={"../screen/Menswatches.js"} className="lux2a">Men's Watches</Link>
