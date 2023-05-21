@@ -1,3 +1,4 @@
+import axios from "axios";
 import React from "react";
 import { useState } from "react";
 import { Form, Button } from "react-bootstrap";
@@ -14,6 +15,8 @@ const[password,setPassword] =useState('')
       password:password
     }
     console.log(params);
+    let res =await axios.post('register',params).catch(d=>console.log(d));
+    console.log(res?.data);
   }
     return (
         <div className="container">

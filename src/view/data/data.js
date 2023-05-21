@@ -54,7 +54,7 @@ export var emailnum=[{text3:'1.804.824.8888'}]
 export var title=[{image:require('../img/companylogo.webp')} ] 
 
 export var shop=[{image:require('../img/grocery-store.png')}]  
-export var sign=[{in:'SIGN IN'}]
+export var sign=[{in:'SIGNUP'}]
 export var rolexlogo=[{image:require('../img/rolexlogoheaderr.png')}]
 export var log=[{in:'LOGIN'}]
 
