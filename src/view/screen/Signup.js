@@ -2,21 +2,51 @@ import axios from "axios";
 import React from "react";
 import { useState } from "react";
 import { Form, Button } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 function Signin(){
-const[name,setName] =useState('')
+const nav = useNavigate()
+  const[name,setName] =useState('')
 const[email,setEmail] =useState('')
 const[password,setPassword] =useState('')
 
-  async function register(){
-   
+
+
+
+let submitregister=async()=>{
+  // console.log(file);
+  // console.log(fileName);
+  
+    const formdata= new FormData();
+    // formdata.append("file",file)
+    // formdata.append("filename",fileName)
+    let data =JSON.stringify( Object.fromEntries(formdata));
+  
+  console.log(data);
     let params={
-      name:name,
-      email:email,
-      password:password
+    username:name,
+    email:email,
+    password:password,
+    // image:file
+  }
+  console.log(params);
+  try {
+      let res =await axios.post("register",params).catch(err=>alert(err))
+      console.log(res?.data);
+      let {success,message} =res?.data
+      if(success){
+        alert(message)
+        nav("/Login")
+      }
+      else{
+        alert(message)
+      }
+    } catch (error) {
+      console.log("error==",error);
+      alert(error)
     }
-    console.log(params);
-    let res =await axios.post('register',params).catch(d=>console.log(d));
-    console.log(res?.data);
+  setEmail("")
+  setPassword("")
+  setName("")
   }
     return (
         <div className="container">
@@ -40,7 +70,7 @@ const[password,setPassword] =useState('')
             </Form.Group>
 
 
-            <Button className="cbtn" variant="primary" onClick={register}>
+            <Button className="cbtn" variant="primary" onClick={submitregister}>
               Submit
             </Button>
           </Form>

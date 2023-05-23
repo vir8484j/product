@@ -1,4 +1,11 @@
-import React from 'react';
+export default function  Footer(){
+  return(
+    <>
+    <h4>Footer</h4>
+    </>
+  )
+}  
+/* import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa';
 
@@ -50,3 +57,4 @@ function Footer() {
 
 export default Footer;
 
+ */
