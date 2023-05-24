@@ -1,4 +1,4 @@
-import {watchesold1908,slid} from '../data/data'
+import {watchesold1908,slidold1908} from '../data/data'
 import {useNavigate} from 'react-router-dom'
 import AwesomeSlider from 'react-awesome-slider';
 import 'react-awesome-slider/dist/styles.css';
@@ -21,9 +21,9 @@ return(
       <Breadcrumb.Item href="#"> Watches 1908</Breadcrumb.Item>
     </Breadcrumb></div>
     {
-        <AwesomeSlider className='aweslid'>
+        <AwesomeSlider className='aweslido'>
                 {
-                    slid.map(function(d)
+                    slidold1908.map(function(d)
                     {
                         return(
                             <div>

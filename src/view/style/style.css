@@ -112,8 +112,33 @@ position: relative;
 margin-top: 50px;
 }
 .aweslid{
+    height: 1000px;
+    width: 1900px;
+    /* margin-left: 200px; */
+    
+}
+.aweslidm{
+    height: 900px;
+    width: 1900px;
+    /* margin-left: 200px; */
+    
+}
+.aweslidw{
+    height: 850px;
+    width: 1900px;
+    /* margin-left: 200px; */
+    
+}
+.aweslids{
+    height: 1500px;
+    width: 1900px;
+    /* margin-left: 200px; */
+    
+}
+.aweslido{
     height: 700px;
     width: 1900px;
+    /* margin-left: 200px; */
     
 }
 .product-div{

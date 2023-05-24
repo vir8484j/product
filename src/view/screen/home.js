@@ -27,7 +27,7 @@ return(
                     {
                         return(
                             <div>
-                            <img src={d.image} alt=""style={{width:'1900px',height:'700px'}}/>
+                            <img src={d.image} alt=""style={{width:'1900px',height:'1000px'}}/>
                             </div>
                         )
                     }

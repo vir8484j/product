@@ -1,4 +1,4 @@
-import {mensproduct,slid} from '../data/data'
+import {mensproduct,slidmens} from '../data/data'
 import {useNavigate} from 'react-router-dom'
 import AwesomeSlider from 'react-awesome-slider';
 import 'react-awesome-slider/dist/styles.css';
@@ -21,13 +21,13 @@ return(
       <Breadcrumb.Item href="#">Mens Watches</Breadcrumb.Item>
     </Breadcrumb></div>
     {
-        <AwesomeSlider className='aweslid'>
+        <AwesomeSlider className='aweslidm'>
                 {
-                    slid.map(function(d)
+                    slidmens.map(function(d)
                     {
                         return(
                             <div>
-                            <img src={d.image} alt=""style={{width:'1900px',height:'700px'}}/>
+                            <img src={d.image} alt=""style={{width:'1900px',height:'900px'}}/>
                             </div>
                         )
                     }

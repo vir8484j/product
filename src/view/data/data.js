@@ -36,14 +36,6 @@ export var product=[
     {id:35,company:'Rolex',name:'1908 18k White Gold Black Leather Strap Mens Watch',serial_number: '52509-0002',sellRate:'$39,500.00',MRPRate:'',image:require('../img/oldwatch3.jpg'),dial_color:'Black'},
     {id:36,company:'Rolex',name:'1908 White Dial Brown Leather Strap 39mm Mens Watch ',serial_number: '52509-0006',sellRate:'$39,500.00',MRPRate:'',image:require('../img/oldwatch4.jpg'),dial_color:'White'},
 ]
-export var slid=[
-    {image:require('../img/BANNER1.jpg')},
-    {image:require('../img/BANNER2.webp')},
-    {image:require('../img/BANNER3.webp')},
-    {image:require('../img/BANNER4.webp')},
-
-]
-
 export var topmost=[{sale:'Summer Sale Upto 20% off'}]
     
 export var emailphoto=[{image:require('../img/email.png')}]
@@ -126,5 +118,49 @@ export var salesummer= [
     {id:16,company:'Rolex',name:'Lady-Datejust 28 Oyster Bracelet Womens Watch ',serial_number: '279174-0012',sellRate:'$7,995.00    ',MRPRate:'$9,950.00',image:require('../img/watch31.jpg'),dial_color:' Dark Grey'},
     {id:17,company:'Rolex',name:'Lady-Datejust 26 White Gold Fluted Bezel Womens Watch ',serial_number: '69174',sellRate:'$4,995.00',MRPRate:'$5,995.00',image:require('../img/watch32.jpg'),dial_color:'  Silver Mosaic'},
 
+
+]
+export var slid=[ 
+    
+    {image:require('../img/mens_banner4.jpg')},
+    {image:require('../img/BANNER8.jpg')},
+    {image:require('../img/mens_banner11.jpg')},
+    {image:require('../img/mens_banner10.jpg')},
+    {image:require('../img/BANNER1.jpg')}
+]
+export var slidmens=[
+    
+    
+    {image:require('../img/BANNER2.webp')},
+    {image:require('../img/BANNER3.webp')},
+    {image:require('../img/pexels-deyaar-rumi-15266871.jpg')},
+    {image:require('../img/BANNER4.webp')},
+    {image:require('../img/mens_banner12.jpg')},
+]
+export var slidwomens=[
+    {image:require('../img/women_banner4.jpg')},
+    {image:require('../img/women_banner9.jpg')},
+    {image:require('../img/women_banner3.jpg')},
+    {image:require('../img/women_banner10.jpg')},
+    {image:require('../img/women_banner1.jpg')},
+    {image:require('../img/women_banner8.jpg')},
+    
+    
+] 
+export var slidold1908=[
+    {image:require('../img/old_watchbanner6.webp')},
+    {image:require('../img/old_watchbanner3.jpg')},
+    {image:require('../img/old_watchbanner4.jpg')},
+    {image:require('../img/old_watchbanner1.webp')},
+    {image:require('../img/old_watchbanner2.jpg')},
+]
+export var slidsummersale=[
+    {image:require('../img/BANNER7.jpg')},
+    {image:require('../img/mens_banner9.jpg')},
+    {image:require('../img/mens_banner7.jpg')},
+    {image:require('../img/BANNER5.webp')},
+    {image:require('../img/BANNER6.webp')},
+   
+    
 
 ]
