@@ -12,7 +12,7 @@ function Details(){
 
 
 let params = {
-    data:product
+   ...product
 }
 
 let res = await axios.post("addtocart",params)

@@ -13,6 +13,7 @@ import Womenswatches from "./view/screen/Womenswatches"
 import Watches1908 from "./view/screen/Watches1908"
 import Summersale from "./view/screen/Summersale";
 import Addtocart from "./view/screen/Addtocart";
+import Payment from "./view/screen/Payment";
 
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous"></link>
@@ -38,11 +39,19 @@ const Layout = () => {
           element: <Home />,
         },
         {
+          path: "Details.js",
+          element: <Details />,
+        },
+        {
           path: "screen/home.js",
           element: <Home />,
         },
         {
-          path: "screen/Addtocart.js",
+          path: "Payment.js",
+          element: <Payment />,
+        },
+        {
+          path: "Addtocart.js",
           element: <Addtocart />,
         },
         {
@@ -63,11 +72,11 @@ const Layout = () => {
         },
       
         {
-            path: "screen/Signin.js",
+            path: "/Signin.js",
             element: <Signin/>,
         },
         {
-          path: "screen/Signup.js",
+          path: "/Signup.js",
           element: <Signup/>,
       },
       ],

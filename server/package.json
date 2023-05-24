@@ -4,14 +4,15 @@
   "main": "serverfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"node serverfile.js",
-    "dev":"nodemon serverfile.js"
+    "start": "node serverfile.js",
+    "dev": "nodemon serverfile.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "nodeman": "^1.1.2",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
     "nodemon": "^2.0.22"
   },
   "devDependencies": {},

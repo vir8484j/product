@@ -19,9 +19,9 @@ let submitregister=async()=>{
     const formdata= new FormData();
     // formdata.append("file",file)
     // formdata.append("filename",fileName)
-    let data =JSON.stringify( Object.fromEntries(formdata));
+    //let data =JSON.stringify( Object.fromEntries(formdata));
   
-  console.log(data);
+  //console.log(data);
     let params={
     username:name,
     email:email,
@@ -32,10 +32,10 @@ let submitregister=async()=>{
   try {
       let res =await axios.post("register",params).catch(err=>alert(err))
       console.log(res?.data);
-      let {success,message} =res?.data
+      const {success,message} =res?.data
       if(success){
         alert(message)
-        nav("/Login")
+        nav("/Signin.js")
       }
       else{
         alert(message)
