@@ -41,7 +41,7 @@ export default function Header  () {
         {shop.map(function(q){
             return(
                 <div>
-                    <Link style={{textDecoration:'none'}} to={"screen/Addtocart.js"}>
+                    <Link style={{textDecoration:'none'}} to={"Addtocart.js"}>
                     <img src={q.image} style={{width:30,marginLeft:30}}/>
                     </Link>
                     </div>
@@ -54,7 +54,7 @@ export default function Header  () {
 
         {sign.map(function(q){
             return(
-                <div style={{}} ><Link style={{textDecoration:'none'}} to={"screen/Signup.js"}>
+                <div style={{}} ><Link style={{textDecoration:'none'}} to={"Signup.js"}>
                     <h4 style={{color:'black',marginLeft:'20px'}}>{q.in}</h4>
                     </Link>
                     </div>
@@ -68,7 +68,7 @@ export default function Header  () {
         {log.map(function(q){
             return(
                 <div >
-                    <Link style={{textDecoration:'none'}} to={"screen/Signin.js"}>
+                    <Link style={{textDecoration:'none'}} to={"Signin.js"}>
                         <h4 style={{color:'black',marginLeft:'20px'}}>{q.in}</h4>
                     </Link></div>
                 

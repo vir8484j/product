@@ -11,7 +11,7 @@ alert('addtocart')
 }
 function productdetails(d){
 //console.log(d);
-navigate('/details',{state:d})
+navigate('/Details.js',{state:d})
 }
 return(  
 <>
